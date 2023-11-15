@@ -1,0 +1,5 @@
+<map id="AtlasGravitypH" name="AtlasGravitypH">
+<area shape="rect" id="Node000001" title="Defineds an analog pH sensor interface for the Atlas Gravity pH." alt="" coords="5,79,127,104"/>
+<area shape="rect" id="Node000002" href="$classpHSensor.html" title="Interface for pH sensors." alt="" coords="24,5,108,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,44,69,79,63,79,63,44"/>
+</map>

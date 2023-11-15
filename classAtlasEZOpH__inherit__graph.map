@@ -1,0 +1,5 @@
+<map id="AtlasEZOpH" name="AtlasEZOpH">
+<area shape="rect" id="Node000001" title="Defines an I2C pH sensor which inherits from pHSensor.hpp." alt="" coords="5,79,105,104"/>
+<area shape="rect" id="Node000002" href="$classpHSensor.html" title="Interface for pH sensors." alt="" coords="13,5,97,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,44,58,79,53,79,53,44"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="pHSensor" name="pHSensor">
+<area shape="rect" id="Node000001" title="Interface for pH sensors." alt="" coords="148,5,232,31"/>
+<area shape="rect" id="Node000002" href="$classAtlasEZOpH.html" title="Defines an I2C pH sensor which inherits from pHSensor.hpp." alt="" coords="5,79,105,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,39,79,81,76,76,155,35"/>
+<area shape="rect" id="Node000003" href="$classAtlasGravitypH.html" title="Defineds an analog pH sensor interface for the Atlas Gravity pH." alt="" coords="129,79,251,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,44,193,79,187,79,187,44"/>
+<area shape="rect" id="Node000004" href="$classGenericPH.html" title="Overrides the interface provided by pHSensor.hpp for a generic analog pH sensor." alt="" coords="275,79,366,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="225,35,301,76,298,81,222,40"/>
+</map>

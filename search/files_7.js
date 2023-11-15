@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['update_2ecpp_0',['update.cpp',['../update_8cpp.html',1,'']]]
+  ['logger_2ehpp_0',['logger.hpp',['../logger_8hpp.html',1,'']]],
+  ['logging_5futil_2ecpp_1',['logging_util.cpp',['../logging__util_8cpp.html',1,'']]]
 ];

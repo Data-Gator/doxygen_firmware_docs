@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['cache_5flog_5foffset_0',['cache_log_offset',['../logging__util_8cpp.html#aa0288d721e9a933c0494590b09c7d810',1,'logging_util.cpp']]],
-  ['cache_5fretrieve_5flog_5foffset_1',['cache_retrieve_log_offset',['../logging__util_8cpp.html#abc8f9c3ac6f2042bc5fc8660063aad5e',1,'logging_util.cpp']]],
-  ['cache_5fretrieve_5ftimestamp_2',['cache_retrieve_timestamp',['../logging__util_8cpp.html#a27e949dc420cd22ef8c220d82cc8259f',1,'logging_util.cpp']]],
-  ['cache_5ftimestamp_3',['cache_timestamp',['../logging__util_8cpp.html#a84557373ab4c41663554890c5589bc3c',1,'logging_util.cpp']]],
-  ['callback_4',['callback',['../mqtt__util_8hpp.html#aeab2f678ad886fb7a6c48a77ce97d410',1,'mqtt_util.hpp']]]
+  ['adafruit_5fads1015_0',['Adafruit_ADS1015',['../classAdafruit__ADS1015.html#a12dfb7b48af1a8e411c59f775c6457ab',1,'Adafruit_ADS1015']]],
+  ['adafruit_5fads1115_1',['Adafruit_ADS1115',['../classAdafruit__ADS1115.html#a7058cf2c75b673fb0b0a8936c3edd1fd',1,'Adafruit_ADS1115']]],
+  ['advertiseddeviceisk6p_2',['advertisedDeviceIsK6P',['../classKKMK6P.html#a67d9a10adb8aa11845908b91cd60672d',1,'KKMK6P']]],
+  ['advertiseddeviceiss1_3',['advertisedDeviceIsS1',['../classMinewS1.html#a8fd6ef466cfcc5a2bc392fb14ba9714a',1,'MinewS1']]],
+  ['append_5fline_4',['append_line',['../classSDLogger.html#ae6fc4ba3a4dae343f317c2e3fe02a6b4',1,'SDLogger']]],
+  ['atlasgravityph_5',['AtlasGravitypH',['../classAtlasGravitypH.html#a943e69f15db9c5ca229dc4cbec398cbf',1,'AtlasGravitypH']]],
+  ['attempt_5fupdate_6',['attempt_update',['../update_8cpp.html#ac73e1e13b3305f391b3319037813e9b0',1,'update.cpp']]]
 ];

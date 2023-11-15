@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['readht_0',['ReadHT',['../scheduler_8hpp.html#a2ce5745ffb225d3a8167ba1970e3b777',1,'scheduler.hpp']]],
-  ['readwired_1',['ReadWired',['../scheduler_8hpp.html#ae6b4c9f02d24e6345a8244b129cb4bce',1,'scheduler.hpp']]],
-  ['remove_2',['remove',['../classSDCard.html#aa79e66efab6a35751ab76e9beb228dc4',1,'SDCard']]],
-  ['rename_3',['rename',['../classSDCard.html#a144e869ec9090712af70cc724b4d0c56',1,'SDCard']]],
-  ['rmdir_4',['rmdir',['../classSDCard.html#a207de663a509e1bd081374dcf5fd02e8',1,'SDCard']]]
+  ['onresult_0',['onResult',['../classScanCallbacks.html#ac34f6efbb63fc4bde3722c9374765d33',1,'ScanCallbacks']]],
+  ['open_1',['open',['../classSDCard.html#ac582420a0decb16dd633f1d89fb95e9f',1,'SDCard']]],
+  ['open_5ffile_2',['open_file',['../classSDLogger.html#aa1eebc076021b72a2ba3430fba1bf0d7',1,'SDLogger::open_file()'],['../classSDReader.html#a6138b3832dfa89e65051ac10b900b0a5',1,'SDReader::open_file()'],['../classSDReader.html#aa2ee81dec768e90b8dab49597f87bd92',1,'SDReader::open_file(string filename)']]],
+  ['operator_20bool_3',['operator bool',['../classSDCard.html#a491caa7cfdbfdf607741662800da2df5',1,'SDCard']]],
+  ['otaupdate_4',['OTAUpdate',['../scheduler_8hpp.html#a2137cbb31cc2a84abc73c9420ea062f1',1,'scheduler.hpp']]]
 ];

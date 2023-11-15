@@ -1,0 +1,5 @@
+<map id="GenericPH" name="GenericPH">
+<area shape="rect" id="Node000001" title="Overrides the interface provided by pHSensor.hpp for a generic analog pH sensor." alt="" coords="5,79,96,104"/>
+<area shape="rect" id="Node000002" href="$classpHSensor.html" title="Interface for pH sensors." alt="" coords="9,5,93,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,44,53,79,48,79,48,44"/>
+</map>

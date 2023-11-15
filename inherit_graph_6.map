@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classpHSensor.html" title="Interface for pH sensors." alt="" coords="5,55,89,80"/>
+<area shape="rect" id="Node000001" href="$classAtlasEZOpH.html" title="Defines an I2C pH sensor which inherits from pHSensor.hpp." alt="" coords="148,5,248,31"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="99,48,157,28,159,33,100,53"/>
+<area shape="rect" id="Node000002" href="$classAtlasGravitypH.html" title="Defineds an analog pH sensor interface for the Atlas Gravity pH." alt="" coords="137,55,259,80"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="103,65,137,65,137,70,103,70"/>
+<area shape="rect" id="Node000003" href="$classGenericPH.html" title="Overrides the interface provided by pHSensor.hpp for a generic analog pH sensor." alt="" coords="153,104,243,129"/>
+<area shape="poly" id="edge7_Node000000_Node000003" title=" " alt="" coords="100,82,159,101,157,106,99,87"/>
+</map>

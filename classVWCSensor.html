@@ -105,32 +105,180 @@ $(document).ready(function(){initNavTree('classVWCSensor.html',''); initResizabl
  <a href="classVWCSensor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="VWCSensor_8hpp_source.html">VWCSensor.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for VWCSensor:</div>
+<div class="dyncontent">
+<div class="center"><img src="classVWCSensor__inherit__graph.png" border="0" usemap="#aVWCSensor_inherit__map" alt="Inheritance graph"/></div>
+<map name="aVWCSensor_inherit__map" id="aVWCSensor_inherit__map">
+<area shape="rect" title="Interface for converting a voltage measurement from an analog sensor into a double,..." alt="" coords="5,5,103,31"/>
+<area shape="rect" href="classTeros10.html" title=" " alt="" coords="18,79,90,104"/>
+<area shape="poly" title=" " alt="" coords="57,44,57,79,51,79,51,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afef4729f3431d95f39204e9f151fbc74" id="r_afef4729f3431d95f39204e9f151fbc74"><td class="memItemLeft" align="right" valign="top"><a id="afef4729f3431d95f39204e9f151fbc74" name="afef4729f3431d95f39204e9f151fbc74"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SoilMedia</b> { <b>MINERAL_SOIL</b>
-, <b>SOILLESS</b>
+<tr class="memitem:afef4729f3431d95f39204e9f151fbc74" id="r_afef4729f3431d95f39204e9f151fbc74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVWCSensor.html#afef4729f3431d95f39204e9f151fbc74">SoilMedia</a> { <a class="el" href="classVWCSensor.html#afef4729f3431d95f39204e9f151fbc74aa87837445517e4f50bd88b9aa5b476b1">MINERAL_SOIL</a>
+, <a class="el" href="classVWCSensor.html#afef4729f3431d95f39204e9f151fbc74a70b16941af867d8dd6f8d532623bd557">SOILLESS</a>
  }</td></tr>
+<tr class="memdesc:afef4729f3431d95f39204e9f151fbc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines types of soil for which the volumetric water content calculation needs to be adjusted.  <a href="classVWCSensor.html#afef4729f3431d95f39204e9f151fbc74">More...</a><br /></td></tr>
 <tr class="separator:afef4729f3431d95f39204e9f151fbc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abf12dc2604d29ebbb67acf10ef00b6ab" id="r_abf12dc2604d29ebbb67acf10ef00b6ab"><td class="memItemLeft" align="right" valign="top"><a id="abf12dc2604d29ebbb67acf10ef00b6ab" name="abf12dc2604d29ebbb67acf10ef00b6ab"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getVWC</b> (SoilMedia media, double voltage)</td></tr>
-<tr class="memdesc:abf12dc2604d29ebbb67acf10ef00b6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert raw data to volume water/volume soil percentage. <br /></td></tr>
+<tr class="memitem:abf12dc2604d29ebbb67acf10ef00b6ab" id="r_abf12dc2604d29ebbb67acf10ef00b6ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVWCSensor.html#abf12dc2604d29ebbb67acf10ef00b6ab">getVWC</a> (<a class="el" href="classVWCSensor.html#afef4729f3431d95f39204e9f151fbc74">SoilMedia</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">media</a>, <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">voltage</a>)</td></tr>
+<tr class="memdesc:abf12dc2604d29ebbb67acf10ef00b6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert raw data to volume water/volume soil percentage.  <br /></td></tr>
 <tr class="separator:abf12dc2604d29ebbb67acf10ef00b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a5fd826886da4f7961193daeaaf82e" id="r_a92a5fd826886da4f7961193daeaaf82e"><td class="memItemLeft" align="right" valign="top"><a id="a92a5fd826886da4f7961193daeaaf82e" name="a92a5fd826886da4f7961193daeaaf82e"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getSensorType</b> ()</td></tr>
-<tr class="memdesc:a92a5fd826886da4f7961193daeaaf82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return brand+sensor model string for topic. <br /></td></tr>
+<tr class="memitem:a92a5fd826886da4f7961193daeaaf82e" id="r_a92a5fd826886da4f7961193daeaaf82e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVWCSensor.html#a92a5fd826886da4f7961193daeaaf82e">getSensorType</a> ()</td></tr>
+<tr class="memdesc:a92a5fd826886da4f7961193daeaaf82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return brand+sensor model string for topic.  <br /></td></tr>
 <tr class="separator:a92a5fd826886da4f7961193daeaaf82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26734d5d7a7dfc050e16fc38c4c49f2d" id="r_a26734d5d7a7dfc050e16fc38c4c49f2d"><td class="memItemLeft" align="right" valign="top"><a id="a26734d5d7a7dfc050e16fc38c4c49f2d" name="a26734d5d7a7dfc050e16fc38c4c49f2d"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toJSON</b> (double voltage)</td></tr>
-<tr class="memdesc:a26734d5d7a7dfc050e16fc38c4c49f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert data to JSON key value pairs. <br /></td></tr>
+<tr class="memitem:a26734d5d7a7dfc050e16fc38c4c49f2d" id="r_a26734d5d7a7dfc050e16fc38c4c49f2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVWCSensor.html#a26734d5d7a7dfc050e16fc38c4c49f2d">toJSON</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">voltage</a>)</td></tr>
+<tr class="memdesc:a26734d5d7a7dfc050e16fc38c4c49f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert data to JSON key value pairs.  <br /></td></tr>
 <tr class="separator:a26734d5d7a7dfc050e16fc38c4c49f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for converting a voltage measurement from an analog sensor into a double, as a Volume of water per volume of soil percentage. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="afef4729f3431d95f39204e9f151fbc74" name="afef4729f3431d95f39204e9f151fbc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef4729f3431d95f39204e9f151fbc74">&#9670;&#160;</a></span>SoilMedia</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">enum</a> <a class="el" href="classVWCSensor.html#afef4729f3431d95f39204e9f151fbc74">VWCSensor::SoilMedia</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines types of soil for which the volumetric water content calculation needs to be adjusted. </p>
+<p>These types are defined according to the needs of the <a href="https://publications.metergroup.com/Manuals/20788_TEROS10_Manual_Web.pdf">Meter Teros10</a>, though in principle this can be extended to other sensors or disregarded by sub-classes. Pass to <code>VWCSensor::getVWC(...)</code> to apply to conversion from analog voltage to digital VWC value. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afef4729f3431d95f39204e9f151fbc74aa87837445517e4f50bd88b9aa5b476b1" name="afef4729f3431d95f39204e9f151fbc74aa87837445517e4f50bd88b9aa5b476b1"></a>MINERAL_SOIL&#160;</td><td class="fielddoc"><p>Mineral-based soil. Dirt! </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afef4729f3431d95f39204e9f151fbc74a70b16941af867d8dd6f8d532623bd557" name="afef4729f3431d95f39204e9f151fbc74a70b16941af867d8dd6f8d532623bd557"></a>SOILLESS&#160;</td><td class="fielddoc"><p>Fake soil, potting soil for example. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a92a5fd826886da4f7961193daeaaf82e" name="a92a5fd826886da4f7961193daeaaf82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a5fd826886da4f7961193daeaaf82e">&#9670;&#160;</a></span>getSensorType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string VWCSensor::getSensorType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return brand+sensor model string for topic. </p>
+<dl class="section return"><dt>Returns</dt><dd>The sensor type as a string identifier, not unique since most VWC sensors are wired with no unique identifier. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classTeros10.html#aa99b63af1c28d98e79a22927d52bf1fb">Teros10</a>.</p>
+
+</div>
+</div>
+<a id="abf12dc2604d29ebbb67acf10ef00b6ab" name="abf12dc2604d29ebbb67acf10ef00b6ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf12dc2604d29ebbb67acf10ef00b6ab">&#9670;&#160;</a></span>getVWC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> VWCSensor::getVWC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVWCSensor.html#afef4729f3431d95f39204e9f151fbc74">SoilMedia</a>&#160;</td>
+          <td class="paramname"><em>media</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td>
+          <td class="paramname"><em>voltage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert raw data to volume water/volume soil percentage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">media</td><td>The type of soil the sensor is going to be used in. This is assumed to be natural dirt by default, but some sensors allow this value to be changed to provide better accuracy.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">voltage</td><td>The raw reading from the sensor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Soil volumetric water content as a double. Values outside of range [0.0, 1.0] indicate sensor error. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classTeros10.html#ad5870a7c628c5531b87d687dee857836">Teros10</a>.</p>
+
+</div>
+</div>
+<a id="a26734d5d7a7dfc050e16fc38c4c49f2d" name="a26734d5d7a7dfc050e16fc38c4c49f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26734d5d7a7dfc050e16fc38c4c49f2d">&#9670;&#160;</a></span>toJSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string VWCSensor::toJSON </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td>
+          <td class="paramname"><em>voltage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert data to JSON key value pairs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">voltage</td><td>The analog voltage read from the sensor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a JSON object string with both the raw reading (voltage) and the converted value as a float with valid values on range [0, 1]. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classTeros10.html#a3396ce8a397fcb209bcfd041dc561764">Teros10</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="VWCSensor_8hpp_source.html">VWCSensor.hpp</a></li>
 </ul>
 </div><!-- contents -->

@@ -102,93 +102,104 @@ $(document).ready(function(){initNavTree('logger_8hpp_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <a href="logger_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef LOGGER_HPP</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define LOGGER_HPP</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">extern</span> <span class="keywordtype">int</span> reset_count;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">log_data</a>(std::string topic, std::string message){</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">bool</span> wifi_connected = WiFi.status() == WL_CONNECTED;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span>(wifi_connected){</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="comment">// log to MQTT </span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        MQTTMailer instance = MQTTMailer::getInstance();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        instance.mailMessage(&amp;mqtt_client, topic, message);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        Serial.println(<span class="stringliteral">&quot;\t-&gt; logging to MQTT&quot;</span>);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef LOGGER_HPP</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define LOGGER_HPP</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="logger_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">reset_count</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">   32</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">log_data</a>(std::string topic, std::string message){</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// logging available set when initializing SDLogger in </span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//  setup</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span>(logging_available){</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        Serial.println(<span class="stringliteral">&quot;\t-&gt; logging to SD card&quot;</span>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        std::string time;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">if</span>(absolute_timestamp_available){</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="comment">// use absolute time from NTP</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            time = tsp-&gt;get_timestamp();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_function" href="logging__util_8cpp.html#a9b87f9c41c4be140985330e569dcc999">log_to_sd_file</a>(logger, time, topic, message);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            logged_relative_data = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="comment">// use relative timestamp and offset</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="comment">// calculate the offset to use</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordtype">int</span> log_offset = <a class="code hl_function" href="logging__util_8cpp.html#abc8f9c3ac6f2042bc5fc8660063aad5e">cache_retrieve_log_offset</a>();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            Serial.printf(<span class="stringliteral">&quot;[DEBUG] log offset:%i, reset_count:%i, tsp offset:%i\n&quot;</span>, log_offset, reset_count, tsp-&gt;get_offset());</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">int</span> new_offset;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="comment">// prevent reset_count wrap from breaking</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="comment">// relative time keeping</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">if</span>(log_offset &gt; reset_count){</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="comment">// offset has exceeded MAX_COUNT and wrapped </span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="comment">// so make the new offset the old offset + net distance </span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="comment">// between log_offset and reset_count</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                new_offset = tsp-&gt;get_offset() + (<a class="code hl_define" href="config_8hpp.html#ae14eaaed1fe7cdf491da54a714c426b3">MAX_COUNT</a> - log_offset) + reset_count;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="comment">// new offset is cached offset + distance between </span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="comment">// current reset count and previous marker</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                new_offset = tsp-&gt;get_offset() + (reset_count - log_offset);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="comment">// parse the date and time from previous time stamp</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="comment">//</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            std::string date = std::to_string(tsp-&gt;get_month()) + <span class="stringliteral">&quot;-&quot;</span> + </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                std::to_string(tsp-&gt;get_day()) + <span class="stringliteral">&quot;-&quot;</span> + </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                std::to_string(tsp-&gt;get_year());</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            std::string clock_time = std::to_string(tsp-&gt;get_hours()) + <span class="stringliteral">&quot;:&quot;</span> + </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                std::to_string(tsp-&gt;get_minutes()) + <span class="stringliteral">&quot;:&quot;</span> + </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                std::to_string(tsp-&gt;get_seconds());</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">bool</span> wifi_connected = WiFi.status() == WL_CONNECTED;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span>(wifi_connected){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// log to MQTT </span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_class" href="classMQTTMailer.html">MQTTMailer</a> instance = MQTTMailer::getInstance();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        instance.<a class="code hl_function" href="classMQTTMailer.html#a47a0d54292af2c913d73cd84c5c3ba85">mailMessage</a>(&amp;<a class="code hl_variable" href="update_8cpp.html#a965861de1a367ef4c2b467de34de2683">mqtt_client</a>, topic, message);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        Serial.println(<span class="stringliteral">&quot;\t-&gt; logging to MQTT&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// logging available set when initializing SDLogger in </span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">//  setup</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="logging__util_8cpp.html#a618f91fbc4c35bde353fc1732d389a69">logging_available</a>){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Serial.println(<span class="stringliteral">&quot;\t-&gt; logging to SD card&quot;</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        std::string time;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="logging__util_8cpp.html#ac0b73c0ce5c9049c6073dc70fc9bb227">absolute_timestamp_available</a>){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="comment">// use absolute time from NTP</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            time = <a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_timestamp();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_function" href="logging__util_8cpp.html#a9b87f9c41c4be140985330e569dcc999">log_to_sd_file</a>(<a class="code hl_variable" href="logging__util_8cpp.html#a446e0ace32278a3a0ee36f498eb24e04">logger</a>, time, topic, message);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="logging__util_8cpp.html#a0f9cf039424a99aff815f1fbb03eb9ca">logged_relative_data</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="comment">// use relative timestamp and offset</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="comment">// calculate the offset to use</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordtype">int</span> log_offset = <a class="code hl_function" href="logging__util_8cpp.html#abc8f9c3ac6f2042bc5fc8660063aad5e">cache_retrieve_log_offset</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            Serial.printf(<span class="stringliteral">&quot;[DEBUG] log offset:%i, reset_count:%i, tsp offset:%i\n&quot;</span>, log_offset, <a class="code hl_variable" href="logger_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">reset_count</a>, <a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_offset());</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">int</span> new_offset;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="comment">// prevent reset_count wrap from breaking</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="comment">// relative time keeping</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span>(log_offset &gt; <a class="code hl_variable" href="logger_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">reset_count</a>){</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="comment">// offset has exceeded MAX_COUNT and wrapped </span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="comment">// so make the new offset the old offset + net distance </span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="comment">// between log_offset and reset_count</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                new_offset = <a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_offset() + (<a class="code hl_define" href="config_8hpp.html#ae14eaaed1fe7cdf491da54a714c426b3">MAX_COUNT</a> - log_offset) + <a class="code hl_variable" href="logger_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">reset_count</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="comment">// new offset is cached offset + distance between </span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <span class="comment">// current reset count and previous marker</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                new_offset = <a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_offset() + (<a class="code hl_variable" href="logger_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">reset_count</a> - log_offset);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            std::string offset = std::to_string(new_offset);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            time = tsb-&gt;get_date_time(date, clock_time, offset);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="comment">// save the timestamp with updated offset</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            time_stamp_to_cache = time;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="comment">// parse the date and time from previous time stamp</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="comment">//</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            std::string date = std::to_string(<a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_month()) + <span class="stringliteral">&quot;-&quot;</span> + </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                std::to_string(<a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_day()) + <span class="stringliteral">&quot;-&quot;</span> + </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                std::to_string(<a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_year());</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_function" href="logging__util_8cpp.html#a9b87f9c41c4be140985330e569dcc999">log_to_sd_file</a>(logger, time, topic, message);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            logged_relative_data = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        Serial.printf(<span class="stringliteral">&quot;[DEBUG] logging \&#39;%s\&#39; | \&#39;%s\&#39; | \&#39;%s\&#39;\n&quot;</span>, time.c_str(), topic.c_str(), message.c_str());</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        Serial.println(<span class="stringliteral">&quot;[ERROR] no SD card connected when logging&quot;</span>);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
-</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            std::string clock_time = std::to_string(<a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_hours()) + <span class="stringliteral">&quot;:&quot;</span> + </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                std::to_string(<a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_minutes()) + <span class="stringliteral">&quot;:&quot;</span> + </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                std::to_string(<a class="code hl_variable" href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a>-&gt;get_seconds());</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            std::string offset = std::to_string(new_offset);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            time = <a class="code hl_variable" href="logging__util_8cpp.html#a9af592e268390420308fbf5e719d393a">tsb</a>-&gt;get_date_time(date, clock_time, offset);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="comment">// save the timestamp with updated offset</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_variable" href="logging__util_8cpp.html#a437b44d29a55b718c85988d982c0f809">time_stamp_to_cache</a> = time;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_function" href="logging__util_8cpp.html#a9b87f9c41c4be140985330e569dcc999">log_to_sd_file</a>(<a class="code hl_variable" href="logging__util_8cpp.html#a446e0ace32278a3a0ee36f498eb24e04">logger</a>, time, topic, message);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_variable" href="logging__util_8cpp.html#a0f9cf039424a99aff815f1fbb03eb9ca">logged_relative_data</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        Serial.printf(<span class="stringliteral">&quot;[DEBUG] logging \&#39;%s\&#39; | \&#39;%s\&#39; | \&#39;%s\&#39;\n&quot;</span>, time.c_str(), topic.c_str(), message.c_str());</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        Serial.println(<span class="stringliteral">&quot;[ERROR] no SD card connected when logging&quot;</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassMQTTMailer_html"><div class="ttname"><a href="classMQTTMailer.html">MQTTMailer</a></div><div class="ttdoc">Converts MQTTMail objects into viable MQTT messages so that they can be published.</div><div class="ttdef"><b>Definition</b> MQTTMailer.hpp:60</div></div>
+<div class="ttc" id="aclassMQTTMailer_html_a47a0d54292af2c913d73cd84c5c3ba85"><div class="ttname"><a href="classMQTTMailer.html#a47a0d54292af2c913d73cd84c5c3ba85">MQTTMailer::mailMessage</a></div><div class="ttdeci">void mailMessage(PubSubClient *mqtt_client, std::string topic, std::string message, bool serial_debug=true)</div><div class="ttdoc">Publish an MQTT message to a topic hosted by a specific broker.</div><div class="ttdef"><b>Definition</b> MQTTMailer.cpp:31</div></div>
 <div class="ttc" id="aconfig_8hpp_html_ae14eaaed1fe7cdf491da54a714c426b3"><div class="ttname"><a href="config_8hpp.html#ae14eaaed1fe7cdf491da54a714c426b3">MAX_COUNT</a></div><div class="ttdeci">#define MAX_COUNT</div><div class="ttdef"><b>Definition</b> config.hpp:21</div></div>
-<div class="ttc" id="alogger_8hpp_html_a2799093145858620308ff4421e6a1ea3"><div class="ttname"><a href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">log_data</a></div><div class="ttdeci">void log_data(std::string topic, std::string message)</div><div class="ttdef"><b>Definition</b> logger.hpp:22</div></div>
-<div class="ttc" id="alogging__util_8cpp_html_a9b87f9c41c4be140985330e569dcc999"><div class="ttname"><a href="logging__util_8cpp.html#a9b87f9c41c4be140985330e569dcc999">log_to_sd_file</a></div><div class="ttdeci">void log_to_sd_file(std::string filename, std::string time, std::string topic, std::string message)</div><div class="ttdef"><b>Definition</b> logging_util.cpp:184</div></div>
-<div class="ttc" id="alogging__util_8cpp_html_abc8f9c3ac6f2042bc5fc8660063aad5e"><div class="ttname"><a href="logging__util_8cpp.html#abc8f9c3ac6f2042bc5fc8660063aad5e">cache_retrieve_log_offset</a></div><div class="ttdeci">int cache_retrieve_log_offset(void)</div><div class="ttdef"><b>Definition</b> logging_util.cpp:165</div></div>
+<div class="ttc" id="alogger_8hpp_html_a2799093145858620308ff4421e6a1ea3"><div class="ttname"><a href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">log_data</a></div><div class="ttdeci">void log_data(std::string topic, std::string message)</div><div class="ttdef"><b>Definition</b> logger.hpp:32</div></div>
+<div class="ttc" id="alogger_8hpp_html_a2df27a00b191de3537c3b53adcecf1e8"><div class="ttname"><a href="logger_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">reset_count</a></div><div class="ttdeci">int reset_count</div><div class="ttdoc">number of resets retrieved for NVS</div><div class="ttdef"><b>Definition</b> scheduler.hpp:31</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_a059cc83bd876c61f940532a2008071e3"><div class="ttname"><a href="logging__util_8cpp.html#a059cc83bd876c61f940532a2008071e3">tsp</a></div><div class="ttdeci">TimeStampParser * tsp</div><div class="ttdoc">parses timestamp strings</div><div class="ttdef"><b>Definition</b> logging_util.cpp:53</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_a0f9cf039424a99aff815f1fbb03eb9ca"><div class="ttname"><a href="logging__util_8cpp.html#a0f9cf039424a99aff815f1fbb03eb9ca">logged_relative_data</a></div><div class="ttdeci">bool logged_relative_data</div><div class="ttdoc">relatively accurate timestamp used, last exact timestamp + # of minutes/resets elapsed</div><div class="ttdef"><b>Definition</b> logging_util.cpp:39</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_a437b44d29a55b718c85988d982c0f809"><div class="ttname"><a href="logging__util_8cpp.html#a437b44d29a55b718c85988d982c0f809">time_stamp_to_cache</a></div><div class="ttdeci">std::string time_stamp_to_cache</div><div class="ttdoc">the formatted timestamp to write to non-volatile memory for next reset</div><div class="ttdef"><b>Definition</b> logging_util.cpp:42</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_a446e0ace32278a3a0ee36f498eb24e04"><div class="ttname"><a href="logging__util_8cpp.html#a446e0ace32278a3a0ee36f498eb24e04">logger</a></div><div class="ttdeci">SDLogger * logger</div><div class="ttdoc">reads and writes to files</div><div class="ttdef"><b>Definition</b> logging_util.cpp:50</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_a618f91fbc4c35bde353fc1732d389a69"><div class="ttname"><a href="logging__util_8cpp.html#a618f91fbc4c35bde353fc1732d389a69">logging_available</a></div><div class="ttdeci">bool logging_available</div><div class="ttdoc">is some logging interface available?</div><div class="ttdef"><b>Definition</b> logging_util.cpp:35</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_a9af592e268390420308fbf5e719d393a"><div class="ttname"><a href="logging__util_8cpp.html#a9af592e268390420308fbf5e719d393a">tsb</a></div><div class="ttdeci">TimeStampBuilder * tsb</div><div class="ttdoc">builds timestamp strings</div><div class="ttdef"><b>Definition</b> logging_util.cpp:52</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_a9b87f9c41c4be140985330e569dcc999"><div class="ttname"><a href="logging__util_8cpp.html#a9b87f9c41c4be140985330e569dcc999">log_to_sd_file</a></div><div class="ttdeci">void log_to_sd_file(std::string filename, std::string time, std::string topic, std::string message)</div><div class="ttdef"><b>Definition</b> logging_util.cpp:209</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_abc8f9c3ac6f2042bc5fc8660063aad5e"><div class="ttname"><a href="logging__util_8cpp.html#abc8f9c3ac6f2042bc5fc8660063aad5e">cache_retrieve_log_offset</a></div><div class="ttdeci">int cache_retrieve_log_offset(void)</div><div class="ttdef"><b>Definition</b> logging_util.cpp:190</div></div>
+<div class="ttc" id="alogging__util_8cpp_html_ac0b73c0ce5c9049c6073dc70fc9bb227"><div class="ttname"><a href="logging__util_8cpp.html#ac0b73c0ce5c9049c6073dc70fc9bb227">absolute_timestamp_available</a></div><div class="ttdeci">bool absolute_timestamp_available</div><div class="ttdoc">is an exact/accurate timestamp available?</div><div class="ttdef"><b>Definition</b> logging_util.cpp:37</div></div>
+<div class="ttc" id="aupdate_8cpp_html_a965861de1a367ef4c2b467de34de2683"><div class="ttname"><a href="update_8cpp.html#a965861de1a367ef4c2b467de34de2683">mqtt_client</a></div><div class="ttdeci">PubSubClient mqtt_client</div><div class="ttdoc">MQTT client object for logging.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

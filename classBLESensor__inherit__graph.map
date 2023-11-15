@@ -1,0 +1,7 @@
+<map id="BLESensor" name="BLESensor">
+<area shape="rect" id="Node000001" title="Defines a bluetooth low energy (BLE) interface for integrating new sensors into the DG firmware." alt="" coords="51,5,141,31"/>
+<area shape="rect" id="Node000002" href="$classKKMK6P.html" title="Singleton used to identify and parse BLE transmissions from KKMK6P BLE Temperature and Humidity senso..." alt="" coords="5,79,83,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,43,55,80,50,77,77,40"/>
+<area shape="rect" id="Node000003" href="$classMinewS1.html" title="Singleton used to identify and parse BLE transmissions from MinewS1 BLE Temperature and Humidity sens..." alt="" coords="107,79,189,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,40,142,77,137,80,110,43"/>
+</map>

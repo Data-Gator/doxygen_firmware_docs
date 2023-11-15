@@ -1,0 +1,5 @@
+<map id="SDReader" name="SDReader">
+<area shape="rect" id="Node000001" title="SDReader provides an interface for opening and reading data from files created using the SDLogger lib..." alt="" coords="5,93,92,119"/>
+<area shape="rect" id="Node000002" href="$classSDCard.html" title="Thin wrapper around ESP32 SD card API." alt="" coords="13,5,84,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,45,51,93,46,93,46,45"/>
+</map>

@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['open_0',['open',['../classSDCard.html#ac582420a0decb16dd633f1d89fb95e9f',1,'SDCard']]],
-  ['operator_20bool_1',['operator bool',['../classSDCard.html#a491caa7cfdbfdf607741662800da2df5',1,'SDCard']]],
-  ['ota_5ffreq_2',['OTA_FREQ',['../config_8hpp.html#a5420655b6c292f8b3999b35374ff686a',1,'config.hpp']]],
-  ['ota_5ft0_3',['ota_t0',['../structplanner.html#a6c06430db7ca522050ff7b27ea5ca487',1,'planner']]],
-  ['otaupdate_4',['OTAUpdate',['../scheduler_8hpp.html#a2137cbb31cc2a84abc73c9420ea062f1',1,'scheduler.hpp']]]
+  ['key_20functionality_0',['Key Functionality',['../logging__util_8cpp.html#autotoc_md3',1,'']]],
+  ['kkm_5fk6p_2ehpp_1',['KKM_K6P.hpp',['../KKM__K6P_8hpp.html',1,'']]],
+  ['kkmk6p_2',['KKMK6P',['../classKKMK6P.html',1,'']]]
 ];

@@ -1,8 +1,21 @@
 var searchData=
 [
-  ['gator_5fprefs_0',['gator_prefs',['../main_8cpp.html#add9553c173198049d23f8a89fe11142c',1,'gator_prefs:&#160;main.cpp'],['../logging__util_8cpp.html#add9553c173198049d23f8a89fe11142c',1,'gator_prefs:&#160;main.cpp']]],
-  ['get_5flog_5ffilename_1',['get_log_filename',['../logging__util_8cpp.html#a55a2c93667516d15e039732826250596',1,'logging_util.cpp']]],
-  ['getph_2',['getpH',['../classpHSensor.html#a38963a5458fb3de87c0c9f20bfce762d',1,'pHSensor']]],
-  ['getsensortype_3',['getsensortype',['../classBLESensor.html#af4d3cf1953981ad13c48b85ea2ed10fd',1,'BLESensor::getSensorType()'],['../classpHSensor.html#a53c7808a2acb51c6c16229762c668be1',1,'pHSensor::getSensorType()'],['../classVWCSensor.html#a92a5fd826886da4f7961193daeaaf82e',1,'VWCSensor::getSensorType()']]],
-  ['getvwc_4',['getVWC',['../classVWCSensor.html#abf12dc2604d29ebbb67acf10ef00b6ab',1,'VWCSensor']]]
+  ['d10_0',['D10',['../pinout_8hpp.html#a5652b43b84dff5277ed06033d1665f46',1,'pinout.hpp']]],
+  ['d11_1',['D11',['../pinout_8hpp.html#ab8d10b6267329c490818d9da5ac41486',1,'pinout.hpp']]],
+  ['d12_2',['D12',['../pinout_8hpp.html#a7d48f219c56c74828d04825a37cc5003',1,'pinout.hpp']]],
+  ['d13_3',['D13',['../pinout_8hpp.html#aa65d06b9eef04346a095f2f0d90b309a',1,'pinout.hpp']]],
+  ['d2_4',['D2',['../pinout_8hpp.html#a7537ecd0f0af6ccc5b85d5df80f4aee7',1,'pinout.hpp']]],
+  ['d3_5',['D3',['../pinout_8hpp.html#afea037e4c6e9187610b538bd6a34b8ff',1,'pinout.hpp']]],
+  ['d5_6',['D5',['../pinout_8hpp.html#a2ddd4183d444d6d128cbdbd6269e4e0c',1,'pinout.hpp']]],
+  ['d6_7',['D6',['../pinout_8hpp.html#a79a18a7f5ccf7a7ca31f302bd62527a6',1,'pinout.hpp']]],
+  ['d7_8',['D7',['../pinout_8hpp.html#a2ba78f059a7ebebc95e7beef690e88d6',1,'pinout.hpp']]],
+  ['d9_9',['D9',['../pinout_8hpp.html#ae712388ef2de85500f826aa636be401c',1,'pinout.hpp']]],
+  ['data_20gator_10',['Data Gator',['../md_README.html#autotoc_md18',1,'']]],
+  ['data_20gator_20library_20documentation_11',['Data Gator Library Documentation',['../md_lib_2README.html',1,'']]],
+  ['data_20gators_12',['Aggregators/Data Gators',['../md_README.html#autotoc_md21',1,'']]],
+  ['debug_13',['DEBUG',['../config_8hpp.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'config.hpp']]],
+  ['deep_5fsleep_14',['deep_sleep',['../firebeetle__sleep_8hpp.html#a83aeba5587a4364be71fbe7633b1caef',1,'firebeetle_sleep.hpp']]],
+  ['description_15',['Project Description',['../index.html',1,'']]],
+  ['documentation_16',['documentation',['../md_lib_2README.html',1,'Data Gator Library Documentation'],['../md_README.html#autotoc_md22',1,'Documentation']]],
+  ['done_17',['DONE',['../pinout_8hpp.html#abe6b865c045f3e7c6892ef4f15ff5779',1,'pinout.hpp']]]
 ];

@@ -11,5 +11,7 @@ var scheduler_8hpp =
     [ "SendTLM", "scheduler_8hpp.html#af6136b721c9ebd2c70157f07e7061f96", null ],
     [ "task_is_scheduled", "scheduler_8hpp.html#acde0b5aea233a35b69ff211f55208c6b", null ],
     [ "ads", "scheduler_8hpp.html#a951ac31de71c2bf701a13e5f233fc6d8", null ],
-    [ "maxlipo", "scheduler_8hpp.html#a106fc9194d62779ffe942b866046530d", null ]
+    [ "maxlipo", "scheduler_8hpp.html#a106fc9194d62779ffe942b866046530d", null ],
+    [ "maxlipo_attached", "scheduler_8hpp.html#ac334200b5e3db6f6228d37cec3b03538", null ],
+    [ "reset_count", "scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8", null ]
 ];

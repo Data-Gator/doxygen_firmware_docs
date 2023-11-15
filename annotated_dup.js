@@ -1,9 +1,27 @@
 var annotated_dup =
 [
+    [ "Adafruit_ADS1015", "classAdafruit__ADS1015.html", "classAdafruit__ADS1015" ],
+    [ "Adafruit_ADS1115", "classAdafruit__ADS1115.html", "classAdafruit__ADS1115" ],
+    [ "AtlasEZOpH", "classAtlasEZOpH.html", "classAtlasEZOpH" ],
+    [ "AtlasGravitypH", "classAtlasGravitypH.html", "classAtlasGravitypH" ],
     [ "BLESensor", "classBLESensor.html", "classBLESensor" ],
+    [ "GenericPH", "classGenericPH.html", "classGenericPH" ],
+    [ "KKMK6P", "classKKMK6P.html", "classKKMK6P" ],
+    [ "MinewS1", "classMinewS1.html", "classMinewS1" ],
+    [ "MQTTMail", "classMQTTMail.html", "classMQTTMail" ],
+    [ "MQTTMailer", "classMQTTMailer.html", "classMQTTMailer" ],
+    [ "MUX_74HC40520", "classMUX__74HC40520.html", "classMUX__74HC40520" ],
     [ "pHSensor", "classpHSensor.html", "classpHSensor" ],
     [ "planner", "structplanner.html", "structplanner" ],
-    [ "ScanCallbacks", "classScanCallbacks.html", null ],
+    [ "ScanCallbacks", "classScanCallbacks.html", "classScanCallbacks" ],
     [ "SDCard", "classSDCard.html", "classSDCard" ],
+    [ "SDLogger", "classSDLogger.html", "classSDLogger" ],
+    [ "SDLoggerDataEntry", "classSDLoggerDataEntry.html", null ],
+    [ "SDReader", "classSDReader.html", "classSDReader" ],
+    [ "Teros10", "classTeros10.html", "classTeros10" ],
+    [ "TimeStamp", "classTimeStamp.html", null ],
+    [ "TimeStampBuilder", "classTimeStampBuilder.html", null ],
+    [ "TimeStampParser", "classTimeStampParser.html", null ],
+    [ "ufloat88", "structufloat88.html", "structufloat88" ],
     [ "VWCSensor", "classVWCSensor.html", "classVWCSensor" ]
 ];

@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('classScanCallbacks.html',''); initResi
 
 <div class="header">
   <div class="summary">
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classScanCallbacks-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ScanCallbacks Class Reference</div></div>
 </div><!--header-->
@@ -123,10 +124,53 @@ Collaboration diagram for ScanCallbacks:</div>
 <area shape="poly" title=" " alt="" coords="133,44,133,79,128,79,128,44"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac34f6efbb63fc4bde3722c9374765d33" id="r_ac34f6efbb63fc4bde3722c9374765d33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScanCallbacks.html#ac34f6efbb63fc4bde3722c9374765d33">onResult</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">NimBLEAdvertisedDevice</a> *<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">dev</a>)</td></tr>
+<tr class="memdesc:ac34f6efbb63fc4bde3722c9374765d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">What to do when a device has been picked up by the scan.  <br /></td></tr>
+<tr class="separator:ac34f6efbb63fc4bde3722c9374765d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Callbacks for BLE packets. </p>
 <p>Provides a set of callbacks to handle identification, parsing and other stages of handling BLE devices and packets. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac34f6efbb63fc4bde3722c9374765d33" name="ac34f6efbb63fc4bde3722c9374765d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34f6efbb63fc4bde3722c9374765d33">&#9670;&#160;</a></span>onResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a> ScanCallbacks::onResult </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">NimBLEAdvertisedDevice</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>What to do when a device has been picked up by the scan. </p>
+<p>Checks device advertisement for known sensor IDs. If recognized, then the packet is parsed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>The packet received by the BLE stack. Contains information needed to identify the sensor as well as data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="ble__util_8hpp_source.html">ble_util.hpp</a></li>
 </ul>
 </div><!-- contents -->

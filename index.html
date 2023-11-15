@@ -96,9 +96,17 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Project Description </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
-Introduction</h1>
-<p>This is the documentation for the Data Gator firmware. It may be used as a detailed reference for extending and improving firmware for the system. </p>
+<div class="textblock"><p><a class="anchor" id="md_mainpage"></a>This is the documentation for the Data Gator firmware. It may be used as a detailed reference for extending and improving firmware for the system.</p>
+<p>When reading this documentation, note that there is documentation both for maintainers and those who want to extend the functionality of the system without re-writing the basic functions. If you are the later, look for these keys which indicate documentation specifically for adding new sensors, etc:</p>
+<ul>
+<li>header files (<code>*.hpp</code>) which have a documentation section labeled <code>Integration</code></li>
+</ul>
+<h4><a class="anchor" id="autotoc_md17"></a>
+Links</h4>
+<p><a class="el" href="md_README.html">README link here</a></p>
+<p><a class="el" href="md_ble__sensor__integration.html">Integrating new BLE Sensors</a></p>
+<p><a class="el" href="md_analog__sensor__integration.html">Integrating new Analog Sensors</a></p>
+<p><a class="el" href="md_i2c__sensor__integration.html">Integrating new I2C Sensors</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

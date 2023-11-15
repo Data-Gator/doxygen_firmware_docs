@@ -12,6 +12,16 @@
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="396,28,474,70,472,74,393,33"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="589,79,681,104"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="416,28,580,72,579,78,414,33"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="706,79,834,104"/>
+<area shape="rect" id="Node000008" href="$MQTTMailer_8hpp_source.html" title=" " alt="" coords="706,79,834,104"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="437,28,693,74,692,79,436,33"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="402,152,522,177"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="721,107,525,152,524,146,720,101"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="546,152,690,177"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="747,106,656,149,654,144,744,102"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="715,152,825,177"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="773,104,773,138,767,138,767,104"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="849,152,960,177"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="793,102,872,143,869,148,790,106"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="984,152,1127,177"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="816,101,997,146,995,151,815,107"/>
 </map>

@@ -98,21 +98,30 @@ $(document).ready(function(){initNavTree('BLESensor_8hpp.html',''); initResizabl
   <div class="headertitle"><div class="title">BLESensor.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>This file implements BLE Sensor generic interface.  
+<a href="#details">More...</a></p>
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="BLESensor_8hpp__dep__incl.png" border="0" usemap="#ainclude_2BLESensor_8hppdep" alt=""/></div>
 <map name="ainclude_2BLESensor_8hppdep" id="ainclude_2BLESensor_8hppdep">
-<area shape="rect" title=" " alt="" coords="64,5,232,31"/>
-<area shape="rect" href="ble__util_8hpp.html" title="Utilities such as callbacks for parsing bluetooth packets." alt="" coords="73,79,223,104"/>
+<area shape="rect" title="This file implements BLE Sensor generic interface." alt="" coords="64,5,232,31"/>
+<area shape="rect" href="ble__util_8hpp.html" title="Utilities such as callbacks for parsing bluetooth packets." alt="" coords="73,152,223,177"/>
+<area shape="poly" title=" " alt="" coords="93,38,63,55,40,80,36,91,37,102,52,121,79,137,110,149,108,154,77,142,49,125,32,104,30,91,35,77,59,51,90,34"/>
+<area shape="rect" href="KKM__K6P_8hpp.html" title="Contains the definition of the KKM K6P BLE sensor, which is based on the BLESensor...." alt="" coords="50,79,246,104"/>
 <area shape="poly" title=" " alt="" coords="151,44,151,79,145,79,145,44"/>
-<area shape="rect" href="scheduler_8hpp.html" title="Utilities for scheduling tasks and saving persistent data." alt="" coords="67,152,229,177"/>
+<area shape="rect" href="MinewS1_8hpp.html" title="Implementation of the Minew S1 bluetooth sensor family. Extends BLESensor.hpp." alt="" coords="271,79,463,104"/>
+<area shape="poly" title=" " alt="" coords="197,32,332,76,330,81,195,37"/>
+<area shape="rect" href="scheduler_8hpp.html" title="Utilities for scheduling tasks and saving persistent data." alt="" coords="67,225,229,251"/>
+<area shape="poly" title=" " alt="" coords="151,191,151,225,145,225,145,191"/>
+<area shape="rect" href="setup__util_8hpp.html" title="Utilities to facilitate setup of devices and interfaces." alt="" coords="5,299,171,324"/>
+<area shape="poly" title=" " alt="" coords="131,263,100,300,96,297,127,260"/>
+<area shape="rect" href="src_2main_8cpp.html" title="Initializes device and calls routines." alt="" coords="95,372,201,397"/>
+<area shape="poly" title=" " alt="" coords="167,261,185,298,186,319,180,340,160,373,156,370,175,338,181,319,180,299,163,263"/>
+<area shape="poly" title=" " alt="" coords="109,333,140,370,136,374,105,336"/>
 <area shape="poly" title=" " alt="" coords="151,118,151,152,145,152,145,118"/>
-<area shape="rect" href="setup__util_8hpp.html" title="Utilities to facilitate setup of devices and interfaces." alt="" coords="5,225,171,251"/>
-<area shape="poly" title=" " alt="" coords="131,190,100,227,96,223,127,186"/>
-<area shape="rect" href="main_8cpp.html" title="Initializes device and calls routines." alt="" coords="95,299,201,324"/>
-<area shape="poly" title=" " alt="" coords="167,187,185,225,186,246,180,267,160,300,156,297,175,265,181,246,180,226,163,190"/>
-<area shape="poly" title=" " alt="" coords="109,260,140,297,136,300,105,263"/>
+<area shape="poly" title=" " alt="" coords="319,111,184,154,183,149,318,106"/>
 </map>
 </div>
 </div>
@@ -121,9 +130,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBLESensor.html">BLESensor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a bluetooth low energy (BLE) interface for integrating new sensors into the DG firmware.  <a href="classBLESensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file implements BLE Sensor generic interface. </p>
+<p><a class="el" href="classBLESensor.html" title="Defines a bluetooth low energy (BLE) interface for integrating new sensors into the DG firmware.">BLESensor</a> is the parent class for all bluetooth low energy sensors which are currently implemented for the Data Gator firmware architecture.</p>
+<p>At this time (Fall 2023), only temperature and humidity sensors are supported, but it is possible that other types could be supported, requiring the parameters passed to toJSON(..) to change.</p>
+<dl class="section author"><dt>Author</dt><dd>Garrett Wells </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2022 </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

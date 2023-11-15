@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['psswd_0',['PSSWD',['../config_8hpp.html#a28a9d90fe947c3f13b83d1b3440246b0',1,'config.hpp']]],
-  ['pwr_5fen_1',['PWR_EN',['../pinout_8hpp.html#ab241a96e494c05c7b5288a549f6c0c01',1,'pinout.hpp']]]
+  ['ota_5ffreq_0',['OTA_FREQ',['../config_8hpp.html#a5420655b6c292f8b3999b35374ff686a',1,'config.hpp']]],
+  ['ota_5fserver_1',['OTA_SERVER',['../update_8cpp.html#adfcee2bc2c9061968f9738d7ddf0a396',1,'update.cpp']]]
 ];

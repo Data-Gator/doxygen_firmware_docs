@@ -1,0 +1,7 @@
+<map id="lib/Atlas_EZO&#45;pH/Atlas_EZO&#45;pH.hpp" name="lib/Atlas_EZO&#45;pH/Atlas_EZO&#45;pH.hpp">
+<area shape="rect" id="Node000001" title="Implements I2C pH sensor which inherits from pHSensor.hpp." alt="" coords="8,5,179,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,69,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,47,56,84,51,80,78,44"/>
+<area shape="rect" id="Node000003" href="$pHSensor_8hpp.html" title="Implements an interface for converting a voltage (analog reading) into a pH value according to the co..." alt="" coords="94,93,205,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,44,135,80,131,84,105,47"/>
+</map>

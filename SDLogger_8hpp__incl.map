@@ -1,0 +1,12 @@
+<map id="lib/SDLogger/SDLogger.hpp" name="lib/SDLogger/SDLogger.hpp">
+<area shape="rect" id="Node000001" title="Implements an interface for using SPI, SDLogger, for reading and writing to files on an SD card." alt="" coords="33,5,230,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,57,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,33,62,51,47,64,35,80,27,109,28,138,23,138,22,108,30,77,43,61,59,47,94,28"/>
+<area shape="rect" id="Node000003" href="$SDCard_8hpp.html" title="SDCard Interface Utilities." alt="" coords="45,79,218,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,31,134,65,129,65,129,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="243,79,305,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="155,28,240,70,237,75,153,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="117,106,60,146,57,142,114,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,152,159,177"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="134,104,134,138,129,138,129,104"/>
+</map>

@@ -100,29 +100,77 @@ $(document).ready(function(){initNavTree('classBLESensor.html',''); initResizabl
   <div class="headertitle"><div class="title">BLESensor Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines a bluetooth low energy (BLE) interface for integrating new sensors into the DG firmware.  
+ <a href="classBLESensor.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BLESensor_8hpp_source.html">BLESensor.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for BLESensor:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBLESensor__inherit__graph.png" border="0" usemap="#aBLESensor_inherit__map" alt="Inheritance graph"/></div>
+<map name="aBLESensor_inherit__map" id="aBLESensor_inherit__map">
+<area shape="rect" title="Defines a bluetooth low energy (BLE) interface for integrating new sensors into the DG firmware." alt="" coords="51,5,141,31"/>
+<area shape="rect" href="classKKMK6P.html" title="Singleton used to identify and parse BLE transmissions from KKMK6P BLE Temperature and Humidity senso..." alt="" coords="5,79,83,104"/>
+<area shape="poly" title=" " alt="" coords="82,43,55,80,50,77,77,40"/>
+<area shape="rect" href="classMinewS1.html" title="Singleton used to identify and parse BLE transmissions from MinewS1 BLE Temperature and Humidity sens..." alt="" coords="107,79,189,104"/>
+<area shape="poly" title=" " alt="" coords="115,40,142,77,137,80,110,43"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c0a5c6ada095fc656bdd5d78a7ea6b9" id="r_a9c0a5c6ada095fc656bdd5d78a7ea6b9"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBLESensor.html#a9c0a5c6ada095fc656bdd5d78a7ea6b9">toJSON</a> (double temp, double humidity)=0</td></tr>
+<tr class="memitem:a9c0a5c6ada095fc656bdd5d78a7ea6b9" id="r_a9c0a5c6ada095fc656bdd5d78a7ea6b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBLESensor.html#a9c0a5c6ada095fc656bdd5d78a7ea6b9">toJSON</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> temp, <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> humidity)=0</td></tr>
 <tr class="memdesc:a9c0a5c6ada095fc656bdd5d78a7ea6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert data values to JSON string object  <br /></td></tr>
 <tr class="separator:a9c0a5c6ada095fc656bdd5d78a7ea6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d3cf1953981ad13c48b85ea2ed10fd" id="r_af4d3cf1953981ad13c48b85ea2ed10fd"><td class="memItemLeft" align="right" valign="top"><a id="af4d3cf1953981ad13c48b85ea2ed10fd" name="af4d3cf1953981ad13c48b85ea2ed10fd"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getSensorType</b> ()=0</td></tr>
-<tr class="memdesc:af4d3cf1953981ad13c48b85ea2ed10fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the sensor type as a string <br /></td></tr>
+<tr class="memitem:af4d3cf1953981ad13c48b85ea2ed10fd" id="r_af4d3cf1953981ad13c48b85ea2ed10fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBLESensor.html#af4d3cf1953981ad13c48b85ea2ed10fd">getSensorType</a> ()=0</td></tr>
+<tr class="memdesc:af4d3cf1953981ad13c48b85ea2ed10fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the sensor type as a string  <br /></td></tr>
 <tr class="separator:af4d3cf1953981ad13c48b85ea2ed10fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0eb762442cb39216a69ada83f741332e" id="r_a0eb762442cb39216a69ada83f741332e"><td class="memItemLeft" align="right" valign="top"><a id="a0eb762442cb39216a69ada83f741332e" name="a0eb762442cb39216a69ada83f741332e"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="memdesc:a0eb762442cb39216a69ada83f741332e"><td class="mdescLeft">&#160;</td><td class="mdescRight">sensor name <br /></td></tr>
+<tr class="memdesc:a0eb762442cb39216a69ada83f741332e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the sensor... not unique, generally something generic such as brand and model. <br /></td></tr>
 <tr class="separator:a0eb762442cb39216a69ada83f741332e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6c41c8d739fbd333ca241ea97c9458" id="r_adf6c41c8d739fbd333ca241ea97c9458"><td class="memItemLeft" align="right" valign="top"><a id="adf6c41c8d739fbd333ca241ea97c9458" name="adf6c41c8d739fbd333ca241ea97c9458"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mac_address</b></td></tr>
-<tr class="memdesc:adf6c41c8d739fbd333ca241ea97c9458"><td class="mdescLeft">&#160;</td><td class="mdescRight">mac address for unique ID <br /></td></tr>
+<tr class="memdesc:adf6c41c8d739fbd333ca241ea97c9458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mac address of sensor BLE for unique ID. <br /></td></tr>
 <tr class="separator:adf6c41c8d739fbd333ca241ea97c9458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines a bluetooth low energy (BLE) interface for integrating new sensors into the DG firmware. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af4d3cf1953981ad13c48b85ea2ed10fd" name="af4d3cf1953981ad13c48b85ea2ed10fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d3cf1953981ad13c48b85ea2ed10fd">&#9670;&#160;</a></span>getSensorType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string BLESensor::getSensorType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the sensor type as a string </p>
+<p>Returns a string which identifies the sensor. Usually contains both the generic identifier constructed of brand and model, and the unique MAC address. </p>
+
+<p>Implemented in <a class="el" href="classKKMK6P.html#af6113aa913a331255d771b260db92597">KKMK6P</a>, and <a class="el" href="classMinewS1.html#a2a032e460b852f9a20e56f14b9fe7ccc">MinewS1</a>.</p>
+
+</div>
+</div>
 <a id="a9c0a5c6ada095fc656bdd5d78a7ea6b9" name="a9c0a5c6ada095fc656bdd5d78a7ea6b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c0a5c6ada095fc656bdd5d78a7ea6b9">&#9670;&#160;</a></span>toJSON()</h2>
 
@@ -133,15 +181,15 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mac_address</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string BLESensor::toJSON </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string BLESensor::toJSON </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td>
           <td class="paramname"><em>temp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td>
           <td class="paramname"><em>humidity</em>&#160;</td>
         </tr>
         <tr>
@@ -158,6 +206,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mac_address</b
 </div><div class="memdoc">
 
 <p>convert data values to JSON string object </p>
+<p>Constructs as JSON formatted string from the data types which are available to be read from the sensor. Defaults to temperature and humidity.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>The temperature as a double in Celsius </td></tr>
@@ -165,6 +214,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mac_address</b
   </table>
   </dd>
 </dl>
+
+<p>Implemented in <a class="el" href="classKKMK6P.html#a62c6be65b79e0897a3024b7ae34c10d3">KKMK6P</a>, and <a class="el" href="classMinewS1.html#a465adf6aed5e7cf2e57e609b10d67373">MinewS1</a>.</p>
 
 </div>
 </div>

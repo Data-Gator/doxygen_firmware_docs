@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['usb_5fdebug_0',['usb_debug',['../main_8cpp.html#a45a3fd1220b5c8c7557fb18db8c20e50',1,'USB_DEBUG:&#160;main.cpp'],['../update_8cpp.html#a45a3fd1220b5c8c7557fb18db8c20e50',1,'USB_DEBUG:&#160;main.cpp']]]
+  ['name_0',['name',['../classBLESensor.html#a0eb762442cb39216a69ada83f741332e',1,'BLESensor']]],
+  ['ntpudp_1',['ntpUDP',['../setup__util_8hpp.html#a22f33e7e05df58bb6145bb6e543e232a',1,'setup_util.hpp']]]
 ];

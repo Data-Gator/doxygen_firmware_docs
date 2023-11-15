@@ -100,22 +100,26 @@ $(document).ready(function(){initNavTree('structplanner.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
+<p>Data structure for task scheduling stored in NVS.  
+ <a href="structplanner.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aec15be434a9427f8071b39d9819b6262" id="r_aec15be434a9427f8071b39d9819b6262"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#aec15be434a9427f8071b39d9819b6262">analog_t0</a> = -1</td></tr>
+<tr class="memitem:aec15be434a9427f8071b39d9819b6262" id="r_aec15be434a9427f8071b39d9819b6262"><td class="memItemLeft" align="right" valign="top"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#aec15be434a9427f8071b39d9819b6262">analog_t0</a> = -1</td></tr>
 <tr class="separator:aec15be434a9427f8071b39d9819b6262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8053e07d44e53920803b4c02dd48008c" id="r_a8053e07d44e53920803b4c02dd48008c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#a8053e07d44e53920803b4c02dd48008c">ht_t0</a> = -1</td></tr>
+<tr class="memitem:a8053e07d44e53920803b4c02dd48008c" id="r_a8053e07d44e53920803b4c02dd48008c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#a8053e07d44e53920803b4c02dd48008c">ht_t0</a> = -1</td></tr>
 <tr class="separator:a8053e07d44e53920803b4c02dd48008c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c06430db7ca522050ff7b27ea5ca487" id="r_a6c06430db7ca522050ff7b27ea5ca487"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#a6c06430db7ca522050ff7b27ea5ca487">ota_t0</a> = -1</td></tr>
+<tr class="memitem:a6c06430db7ca522050ff7b27ea5ca487" id="r_a6c06430db7ca522050ff7b27ea5ca487"><td class="memItemLeft" align="right" valign="top"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#a6c06430db7ca522050ff7b27ea5ca487">ota_t0</a> = -1</td></tr>
 <tr class="separator:a6c06430db7ca522050ff7b27ea5ca487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fbe58c903893e4dc56d5ded1cb0bfd4" id="r_a9fbe58c903893e4dc56d5ded1cb0bfd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#a9fbe58c903893e4dc56d5ded1cb0bfd4">tlm_t0</a> = -1</td></tr>
+<tr class="memitem:a9fbe58c903893e4dc56d5ded1cb0bfd4" id="r_a9fbe58c903893e4dc56d5ded1cb0bfd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplanner.html#a9fbe58c903893e4dc56d5ded1cb0bfd4">tlm_t0</a> = -1</td></tr>
 <tr class="separator:a9fbe58c903893e4dc56d5ded1cb0bfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Counters for when the last time the task was executed.</p>
-<p>Last reset counter value when reading was taken. </p>
+<div class="textblock"><p>Data structure for task scheduling stored in NVS. </p>
+<p>Counters for when the last time the task was executed, the last reset counter value when reading was taken. Members are named by task name and the <code>_t0</code> denotes physics-esque mathematical notation, ie this is the starting point of our calculation.</p>
+<p>Tasks are similarly named functions which are run when the current reset count value minus the previous reset count recorded in <code>&lt;task_name&gt;_t0</code> equals the time between task executions specified in the config header. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aec15be434a9427f8071b39d9819b6262" name="aec15be434a9427f8071b39d9819b6262"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec15be434a9427f8071b39d9819b6262">&#9670;&#160;</a></span>analog_t0</h2>
@@ -124,7 +128,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int planner::analog_t0 = -1</td>
+          <td class="memname"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a> planner::analog_t0 = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -139,7 +143,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int planner::ht_t0 = -1</td>
+          <td class="memname"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a> planner::ht_t0 = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -154,7 +158,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int planner::ota_t0 = -1</td>
+          <td class="memname"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a> planner::ota_t0 = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,7 +173,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int planner::tlm_t0 = -1</td>
+          <td class="memname"><a class="el" href="scheduler_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a> planner::tlm_t0 = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">

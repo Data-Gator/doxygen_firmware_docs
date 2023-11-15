@@ -1,0 +1,10 @@
+<map id="lib/Atlas_EZO&#45;pH/Atlas_EZO&#45;pH.hpp" name="lib/Atlas_EZO&#45;pH/Atlas_EZO&#45;pH.hpp">
+<area shape="rect" id="Node000001" title="Implements I2C pH sensor which inherits from pHSensor.hpp." alt="" coords="63,5,233,45"/>
+<area shape="rect" id="Node000002" href="$scheduler_8hpp.html" title="Utilities for scheduling tasks and saving persistent data." alt="" coords="67,93,229,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,59,151,93,145,93,145,59"/>
+<area shape="rect" id="Node000003" href="$setup__util_8hpp.html" title="Utilities to facilitate setup of devices and interfaces." alt="" coords="5,167,171,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,131,100,168,96,165,127,128"/>
+<area shape="rect" id="Node000004" href="$src_2main_8cpp.html" title="Initializes device and calls routines." alt="" coords="95,240,201,265"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="167,129,185,166,186,187,180,208,160,241,156,238,175,206,181,187,180,167,163,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="109,201,140,238,136,242,105,204"/>
+</map>

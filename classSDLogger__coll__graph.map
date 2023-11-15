@@ -1,0 +1,5 @@
+<map id="SDLogger" name="SDLogger">
+<area shape="rect" id="Node000001" title="Creates an interface for writing data to a log file on an SD card." alt="" coords="5,93,89,119"/>
+<area shape="rect" id="Node000002" href="$classSDCard.html" title="Thin wrapper around ESP32 SD card API." alt="" coords="12,5,83,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,45,50,93,45,93,45,45"/>
+</map>

@@ -110,7 +110,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" title="Logging Utilities for detecting and selecting logging interfaces." alt="" coords="129,5,271,31"/>
 <area shape="rect" href="ble__util_8hpp.html" title="Utilities such as callbacks for parsing bluetooth packets." alt="" coords="69,79,219,104"/>
 <area shape="poly" title=" " alt="" coords="184,43,155,80,151,77,180,40"/>
-<area shape="rect" href="main_8cpp.html" title="Initializes device and calls routines." alt="" coords="155,299,261,324"/>
+<area shape="rect" href="src_2main_8cpp.html" title="Initializes device and calls routines." alt="" coords="155,299,261,324"/>
 <area shape="poly" title=" " alt="" coords="217,41,233,78,239,110,241,143,236,207,225,262,215,299,209,297,220,260,231,206,236,143,234,111,228,79,213,44"/>
 <area shape="rect" href="scheduler_8hpp.html" title="Utilities for scheduling tasks and saving persistent data." alt="" coords="59,152,221,177"/>
 <area shape="poly" title=" " alt="" coords="145,118,143,152,138,152,140,118"/>
@@ -125,17 +125,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2799093145858620308ff4421e6a1ea3" id="r_a2799093145858620308ff4421e6a1ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">log_data</a> (std::string topic, std::string message)</td></tr>
+<tr class="memitem:a2799093145858620308ff4421e6a1ea3" id="r_a2799093145858620308ff4421e6a1ea3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a2799093145858620308ff4421e6a1ea3">log_data</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">std::string</a> topic, <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">std::string</a> message)</td></tr>
 <tr class="separator:a2799093145858620308ff4421e6a1ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a2df27a00b191de3537c3b53adcecf1e8" id="r_a2df27a00b191de3537c3b53adcecf1e8"><td class="memItemLeft" align="right" valign="top"><a id="a2df27a00b191de3537c3b53adcecf1e8" name="a2df27a00b191de3537c3b53adcecf1e8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>reset_count</b></td></tr>
+<tr class="memitem:a2df27a00b191de3537c3b53adcecf1e8" id="r_a2df27a00b191de3537c3b53adcecf1e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a2df27a00b191de3537c3b53adcecf1e8">reset_count</a></td></tr>
+<tr class="memdesc:a2df27a00b191de3537c3b53adcecf1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of resets retrieved for NVS  <br /></td></tr>
 <tr class="separator:a2df27a00b191de3537c3b53adcecf1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging Utilities for detecting and selecting logging interfaces. </p>
+<p>Defines the high-level wrapper for logging data on the Data Gator (DG). Currently this consists of a single function <code>log_data</code> which takes the data strings to be logged and logs them to all available logging destinations such as MQTT and the SD card.</p>
+<p>Data destinations are controlled by whether their 'is available' flag is set to <code>true</code>. This flag is first set in the user configuration files but can be overridden if the interface cannot be initialized during setup.</p>
 <dl class="section author"><dt>Author</dt><dd>Garret Wells </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a2799093145858620308ff4421e6a1ea3" name="a2799093145858620308ff4421e6a1ea3"></a>
@@ -145,15 +147,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>reset_count</b></td></
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void log_data </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a> log_data </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">std::string</a>&#160;</td>
           <td class="paramname"><em>topic</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">std::string</a>&#160;</td>
           <td class="paramname"><em>message</em>&#160;</td>
         </tr>
         <tr>
@@ -164,7 +166,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>reset_count</b></td></
       </table>
 </div><div class="memdoc">
 <p>Helper function that handles all data logging to MQTT and the SD card automatically.</p>
-<p>IF (there is a WiFi connection) -&gt; log to MQTT broker IF (there is a SD card) -&gt; log to SD card</p>
+<p>IF (there is a WiFi connection) -&gt; log to MQTT broker</p>
+<p>IF (there is a SD card) -&gt; log to SD card</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>The MQTT topic to log </td></tr>
@@ -172,6 +175,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>reset_count</b></td></
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2df27a00b191de3537c3b53adcecf1e8" name="a2df27a00b191de3537c3b53adcecf1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df27a00b191de3537c3b53adcecf1e8">&#9670;&#160;</a></span>reset_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int reset_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of resets retrieved for NVS </p>
+<p>External variable holding the number of resets recorded by the system. Stored and loaded from non-volatile storage. </p>
 
 </div>
 </div>

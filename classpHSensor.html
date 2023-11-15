@@ -104,16 +104,30 @@ $(document).ready(function(){initNavTree('classpHSensor.html',''); initResizable
  <a href="classpHSensor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="pHSensor_8hpp_source.html">pHSensor.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pHSensor:</div>
+<div class="dyncontent">
+<div class="center"><img src="classpHSensor__inherit__graph.png" border="0" usemap="#apHSensor_inherit__map" alt="Inheritance graph"/></div>
+<map name="apHSensor_inherit__map" id="apHSensor_inherit__map">
+<area shape="rect" title="Interface for pH sensors." alt="" coords="148,5,232,31"/>
+<area shape="rect" href="classAtlasEZOpH.html" title="Defines an I2C pH sensor which inherits from pHSensor.hpp." alt="" coords="5,79,105,104"/>
+<area shape="poly" title=" " alt="" coords="158,39,79,81,76,76,155,35"/>
+<area shape="rect" href="classAtlasGravitypH.html" title="Defineds an analog pH sensor interface for the Atlas Gravity pH." alt="" coords="129,79,251,104"/>
+<area shape="poly" title=" " alt="" coords="193,44,193,79,187,79,187,44"/>
+<area shape="rect" href="classGenericPH.html" title="Overrides the interface provided by pHSensor.hpp for a generic analog pH sensor." alt="" coords="275,79,366,104"/>
+<area shape="poly" title=" " alt="" coords="225,35,301,76,298,81,222,40"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38963a5458fb3de87c0c9f20bfce762d" id="r_a38963a5458fb3de87c0c9f20bfce762d"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpHSensor.html#a38963a5458fb3de87c0c9f20bfce762d">getpH</a> (double voltage)</td></tr>
+<tr class="memitem:a38963a5458fb3de87c0c9f20bfce762d" id="r_a38963a5458fb3de87c0c9f20bfce762d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpHSensor.html#a38963a5458fb3de87c0c9f20bfce762d">getpH</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">voltage</a>)</td></tr>
 <tr class="memdesc:a38963a5458fb3de87c0c9f20bfce762d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert voltage reading to pH value.  <br /></td></tr>
 <tr class="separator:a38963a5458fb3de87c0c9f20bfce762d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c7808a2acb51c6c16229762c668be1" id="r_a53c7808a2acb51c6c16229762c668be1"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpHSensor.html#a53c7808a2acb51c6c16229762c668be1">getSensorType</a> ()</td></tr>
+<tr class="memitem:a53c7808a2acb51c6c16229762c668be1" id="r_a53c7808a2acb51c6c16229762c668be1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpHSensor.html#a53c7808a2acb51c6c16229762c668be1">getSensorType</a> ()</td></tr>
 <tr class="memdesc:a53c7808a2acb51c6c16229762c668be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sensor type as a string, used for constructing MQTT topics.  <br /></td></tr>
 <tr class="separator:a53c7808a2acb51c6c16229762c668be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a56812e0bbbfc7209f930892671cba" id="r_a80a56812e0bbbfc7209f930892671cba"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpHSensor.html#a80a56812e0bbbfc7209f930892671cba">toJSON</a> (double voltage)</td></tr>
+<tr class="memitem:a80a56812e0bbbfc7209f930892671cba" id="r_a80a56812e0bbbfc7209f930892671cba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpHSensor.html#a80a56812e0bbbfc7209f930892671cba">toJSON</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">voltage</a>)</td></tr>
 <tr class="memdesc:a80a56812e0bbbfc7209f930892671cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a voltage to a JSON object string for MQTT messages.  <br /></td></tr>
 <tr class="separator:a80a56812e0bbbfc7209f930892671cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -131,9 +145,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual double pHSensor::getpH </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a> pHSensor::getpH </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td>
           <td class="paramname"><em>voltage</em></td><td>)</td>
           <td></td>
         </tr>
@@ -148,6 +162,8 @@ Public Member Functions</h2></td></tr>
 <p>Convert voltage reading to pH value. </p>
 <dl class="section return"><dt>Returns</dt><dd>The pH as a double </dd></dl>
 
+<p>Reimplemented in <a class="el" href="classAtlasGravitypH.html#a868f78a657cf1560181908143c928d34">AtlasGravitypH</a>, <a class="el" href="classGenericPH.html#ad3979c23d161649b438d7c692e2bb075">GenericPH</a>, and <a class="el" href="classAtlasEZOpH.html#ac843df1ad504e7f68c12ee2d771f2765">AtlasEZOpH</a>.</p>
+
 </div>
 </div>
 <a id="a53c7808a2acb51c6c16229762c668be1" name="a53c7808a2acb51c6c16229762c668be1"></a>
@@ -160,7 +176,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string pHSensor::getSensorType </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string pHSensor::getSensorType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -176,6 +192,8 @@ Public Member Functions</h2></td></tr>
 <p>Get the sensor type as a string, used for constructing MQTT topics. </p>
 <dl class="section return"><dt>Returns</dt><dd>The sensor manufacturer and type as a string </dd></dl>
 
+<p>Reimplemented in <a class="el" href="classAtlasGravitypH.html#a325e40675f4c4ba581e79ff93154c7a4">AtlasGravitypH</a>, <a class="el" href="classGenericPH.html#a184797bc7def010c1b13fdf9869e0686">GenericPH</a>, and <a class="el" href="classAtlasEZOpH.html#aea3c9661bb25197154340c37a8a22f8d">AtlasEZOpH</a>.</p>
+
 </div>
 </div>
 <a id="a80a56812e0bbbfc7209f930892671cba" name="a80a56812e0bbbfc7209f930892671cba"></a>
@@ -188,9 +206,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string pHSensor::toJSON </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">virtual</a> std::string pHSensor::toJSON </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">double</a>&#160;</td>
           <td class="paramname"><em>voltage</em></td><td>)</td>
           <td></td>
         </tr>
@@ -204,6 +222,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Converts a voltage to a JSON object string for MQTT messages. </p>
 <dl class="section return"><dt>Returns</dt><dd>A sensor message with voltage as JSON </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classAtlasEZOpH.html#ad4a36bff07a18a43a829600e8e09c9c9">AtlasEZOpH</a>, <a class="el" href="classAtlasGravitypH.html#a0bf08c848fbe645a27425b0dfc299956">AtlasGravitypH</a>, and <a class="el" href="classGenericPH.html#a2fefd15f093dab781fdd288c917b5764">GenericPH</a>.</p>
 
 </div>
 </div>

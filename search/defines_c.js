@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wifi_5ftimeout_0',['WIFI_TIMEOUT',['../config_8hpp.html#ac39e7144fabb2ba47a75f88640a1bb4b',1,'config.hpp']]]
+  ['us_5fto_5fs_5ffactor_0',['uS_TO_S_FACTOR',['../firebeetle__sleep_8hpp.html#a628c12ff2a1ac4b14a41f021723b2558',1,'firebeetle_sleep.hpp']]]
 ];

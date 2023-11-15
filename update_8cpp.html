@@ -128,8 +128,18 @@ Include dependency graph for update.cpp:</div>
 <area shape="poly" title=" " alt="" coords="396,28,474,70,472,74,393,33"/>
 <area shape="rect" title=" " alt="" coords="589,79,681,104"/>
 <area shape="poly" title=" " alt="" coords="416,28,580,72,579,78,414,33"/>
-<area shape="rect" title=" " alt="" coords="706,79,834,104"/>
+<area shape="rect" href="MQTTMailer_8hpp_source.html" title=" " alt="" coords="706,79,834,104"/>
 <area shape="poly" title=" " alt="" coords="437,28,693,74,692,79,436,33"/>
+<area shape="rect" title=" " alt="" coords="402,152,522,177"/>
+<area shape="poly" title=" " alt="" coords="721,107,525,152,524,146,720,101"/>
+<area shape="rect" title=" " alt="" coords="546,152,690,177"/>
+<area shape="poly" title=" " alt="" coords="747,106,656,149,654,144,744,102"/>
+<area shape="rect" title=" " alt="" coords="715,152,825,177"/>
+<area shape="poly" title=" " alt="" coords="773,104,773,138,767,138,767,104"/>
+<area shape="rect" title=" " alt="" coords="849,152,960,177"/>
+<area shape="poly" title=" " alt="" coords="793,102,872,143,869,148,790,106"/>
+<area shape="rect" title=" " alt="" coords="984,152,1127,177"/>
+<area shape="poly" title=" " alt="" coords="816,101,997,146,995,151,815,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -138,7 +148,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="update_8cpp__dep__incl.png" border="0" usemap="#ainclude_2update_8cppdep" alt=""/></div>
 <map name="ainclude_2update_8cppdep" id="ainclude_2update_8cppdep">
 <area shape="rect" title="Defines utilities for managing firmware updates, using Over&#45;The&#45;Air updates." alt="" coords="5,5,151,31"/>
-<area shape="rect" href="main_8cpp.html" title="Initializes device and calls routines." alt="" coords="25,79,131,104"/>
+<area shape="rect" href="src_2main_8cpp.html" title="Initializes device and calls routines." alt="" coords="25,79,131,104"/>
 <area shape="poly" title=" " alt="" coords="81,44,81,79,75,79,75,44"/>
 </map>
 </div>
@@ -147,42 +157,85 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:adfcee2bc2c9061968f9738d7ddf0a396" id="r_adfcee2bc2c9061968f9738d7ddf0a396"><td class="memItemLeft" align="right" valign="top"><a id="adfcee2bc2c9061968f9738d7ddf0a396" name="adfcee2bc2c9061968f9738d7ddf0a396"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OTA_SERVER</b>&#160;&#160;&#160;&quot;192.168.50.10&quot;</td></tr>
+<tr class="memitem:adfcee2bc2c9061968f9738d7ddf0a396" id="r_adfcee2bc2c9061968f9738d7ddf0a396"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#adfcee2bc2c9061968f9738d7ddf0a396">OTA_SERVER</a>&#160;&#160;&#160;&quot;192.168.50.10&quot;</td></tr>
+<tr class="memdesc:adfcee2bc2c9061968f9738d7ddf0a396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Over-The-Air update server address.  <br /></td></tr>
 <tr class="separator:adfcee2bc2c9061968f9738d7ddf0a396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b133af72f24d9221d811ae375854631" id="r_a9b133af72f24d9221d811ae375854631"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a9b133af72f24d9221d811ae375854631">new_firmware_version_available</a> ()</td></tr>
+<tr class="memitem:a9b133af72f24d9221d811ae375854631" id="r_a9b133af72f24d9221d811ae375854631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a9b133af72f24d9221d811ae375854631">new_firmware_version_available</a> ()</td></tr>
 <tr class="memdesc:a9b133af72f24d9221d811ae375854631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if server has different firmware version.  <br /></td></tr>
 <tr class="separator:a9b133af72f24d9221d811ae375854631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59d61902e825ebabe0a2259ba8e906ac" id="r_a59d61902e825ebabe0a2259ba8e906ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a59d61902e825ebabe0a2259ba8e906ac">update_progress</a> (int cur, int total)</td></tr>
+<tr class="memitem:a59d61902e825ebabe0a2259ba8e906ac" id="r_a59d61902e825ebabe0a2259ba8e906ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a59d61902e825ebabe0a2259ba8e906ac">update_progress</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">cur</a>, <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">total</a>)</td></tr>
 <tr class="memdesc:a59d61902e825ebabe0a2259ba8e906ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints update process progress to the serial interface.  <br /></td></tr>
 <tr class="separator:a59d61902e825ebabe0a2259ba8e906ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30dfa0188e237f4ae0f983a8dd84888" id="r_ac30dfa0188e237f4ae0f983a8dd84888"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#ac30dfa0188e237f4ae0f983a8dd84888">update_started</a> ()</td></tr>
+<tr class="memitem:ac30dfa0188e237f4ae0f983a8dd84888" id="r_ac30dfa0188e237f4ae0f983a8dd84888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#ac30dfa0188e237f4ae0f983a8dd84888">update_started</a> ()</td></tr>
 <tr class="memdesc:ac30dfa0188e237f4ae0f983a8dd84888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send status message to the MQTT broker that the update process started.  <br /></td></tr>
 <tr class="separator:ac30dfa0188e237f4ae0f983a8dd84888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ab67b93fc9ac13fed541d66e044a039" id="r_a4ab67b93fc9ac13fed541d66e044a039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a4ab67b93fc9ac13fed541d66e044a039">update_finished</a> ()</td></tr>
+<tr class="memitem:a4ab67b93fc9ac13fed541d66e044a039" id="r_a4ab67b93fc9ac13fed541d66e044a039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a4ab67b93fc9ac13fed541d66e044a039">update_finished</a> ()</td></tr>
 <tr class="memdesc:a4ab67b93fc9ac13fed541d66e044a039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log update process finished.  <br /></td></tr>
 <tr class="separator:a4ab67b93fc9ac13fed541d66e044a039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91745750976b456ed74139d5c6a07473" id="r_a91745750976b456ed74139d5c6a07473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a91745750976b456ed74139d5c6a07473">update_error</a> (int err)</td></tr>
+<tr class="memitem:a91745750976b456ed74139d5c6a07473" id="r_a91745750976b456ed74139d5c6a07473"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a91745750976b456ed74139d5c6a07473">update_error</a> (<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">err</a>)</td></tr>
 <tr class="memdesc:a91745750976b456ed74139d5c6a07473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log update process errored out.  <br /></td></tr>
 <tr class="separator:a91745750976b456ed74139d5c6a07473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac73e1e13b3305f391b3319037813e9b0" id="r_ac73e1e13b3305f391b3319037813e9b0"><td class="memItemLeft" align="right" valign="top"><a id="ac73e1e13b3305f391b3319037813e9b0" name="ac73e1e13b3305f391b3319037813e9b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>attempt_update</b> ()</td></tr>
+<tr class="memitem:ac73e1e13b3305f391b3319037813e9b0" id="r_ac73e1e13b3305f391b3319037813e9b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#ac73e1e13b3305f391b3319037813e9b0">attempt_update</a> ()</td></tr>
+<tr class="memdesc:ac73e1e13b3305f391b3319037813e9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts OTA firmware update from server.  <br /></td></tr>
 <tr class="separator:ac73e1e13b3305f391b3319037813e9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a45a3fd1220b5c8c7557fb18db8c20e50" id="r_a45a3fd1220b5c8c7557fb18db8c20e50"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a45a3fd1220b5c8c7557fb18db8c20e50">USB_DEBUG</a></td></tr>
+<tr class="memitem:a45a3fd1220b5c8c7557fb18db8c20e50" id="r_a45a3fd1220b5c8c7557fb18db8c20e50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">const</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update_8cpp.html#a45a3fd1220b5c8c7557fb18db8c20e50">USB_DEBUG</a></td></tr>
+<tr class="memdesc:a45a3fd1220b5c8c7557fb18db8c20e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB serial debugging enabled.  <br /></td></tr>
 <tr class="separator:a45a3fd1220b5c8c7557fb18db8c20e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a965861de1a367ef4c2b467de34de2683" id="r_a965861de1a367ef4c2b467de34de2683"><td class="memItemLeft" align="right" valign="top"><a id="a965861de1a367ef4c2b467de34de2683" name="a965861de1a367ef4c2b467de34de2683"></a>
-PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</b></td></tr>
+<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">PubSubClient</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</b></td></tr>
+<tr class="memdesc:a965861de1a367ef4c2b467de34de2683"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT client object for logging. <br /></td></tr>
 <tr class="separator:a965861de1a367ef4c2b467de34de2683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines utilities for managing firmware updates, using Over-The-Air updates. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="adfcee2bc2c9061968f9738d7ddf0a396" name="adfcee2bc2c9061968f9738d7ddf0a396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfcee2bc2c9061968f9738d7ddf0a396">&#9670;&#160;</a></span>OTA_SERVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">define</a> OTA_SERVER&#160;&#160;&#160;&quot;192.168.50.10&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Over-The-Air update server address. </p>
+<p>Static IP address for the server hosting the firmware update files. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac73e1e13b3305f391b3319037813e9b0" name="ac73e1e13b3305f391b3319037813e9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73e1e13b3305f391b3319037813e9b0">&#9670;&#160;</a></span>attempt_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a> attempt_update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts OTA firmware update from server. </p>
+<p>Checks current firmware version on server, if <em>different</em> then update. Based on concepts from an example in the HTTPUpdate library.</p>
+<p>This allows firmware upgrades AND downgrades. Attempts an update from the server three times before continuing.</p>
+<p>Attaches three event callback functions to the httpUpdate object. Each callback function publishes debug messages which can be retrieved from a MQTT debug topic <code>datagator/ota/&lt;MAC address&gt;</code> as well as the serial output.</p>
+<p>If serial debugging is available, the server url can be checked in serial output. </p>
+
+</div>
+</div>
 <a id="a9b133af72f24d9221d811ae375854631" name="a9b133af72f24d9221d811ae375854631"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b133af72f24d9221d811ae375854631">&#9670;&#160;</a></span>new_firmware_version_available()</h2>
 
@@ -190,7 +243,7 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string new_firmware_version_available </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">string</a> new_firmware_version_available </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -211,9 +264,9 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void update_error </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a> update_error </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
           <td></td>
         </tr>
@@ -232,7 +285,7 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void update_finished </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a> update_finished </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -241,7 +294,7 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
 </div><div class="memdoc">
 
 <p>Log update process finished. </p>
-<p>Notifies the MQTT broker and prints the update finished message to the serial line. </p>
+<p>Notifies the MQTT broker and prints the update finished message to the serial line. Only printed if successful. </p>
 
 </div>
 </div>
@@ -252,15 +305,15 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void update_progress </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a> update_progress </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a>&#160;</td>
           <td class="paramname"><em>cur</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">int</a>&#160;</td>
           <td class="paramname"><em>total</em>&#160;</td>
         </tr>
         <tr>
@@ -290,7 +343,7 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void update_started </td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">void</a> update_started </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -314,7 +367,7 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool USB_DEBUG</td>
+          <td class="memname"><a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">const</a> <a class="el" href="src_2main_8cpp.html#a2df27a00b191de3537c3b53adcecf1e8">bool</a> USB_DEBUG</td>
         </tr>
       </table>
   </td>
@@ -323,7 +376,9 @@ PubSubClient&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_client</
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Serial debug enable flag, set in config.h </p>
+
+<p>USB serial debugging enabled. </p>
+<p>Serial debug enable flag, set in <a class="el" href="config_8h_source.html">config.h</a> </p>
 
 </div>
 </div>

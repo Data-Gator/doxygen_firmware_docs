@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['firebeetle_20sleep_0',['firebeetle sleep',['../group__FIREBEETLE__SLEEP.html',1,'']]]
+  ['mailer_0',['MQTT Mailer',['../group__MQTTMAILER.html',1,'']]],
+  ['mqtt_20mailer_1',['MQTT Mailer',['../group__MQTTMAILER.html',1,'']]]
 ];

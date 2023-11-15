@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ht_5ft0_0',['ht_t0',['../structplanner.html#a8053e07d44e53920803b4c02dd48008c',1,'planner']]]
+  ['gator_5fprefs_0',['gator_prefs',['../src_2main_8cpp.html#add9553c173198049d23f8a89fe11142c',1,'gator_prefs:&#160;main.cpp'],['../logging__util_8cpp.html#add9553c173198049d23f8a89fe11142c',1,'gator_prefs:&#160;main.cpp']]]
 ];
